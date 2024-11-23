@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+   <script>
+    function Add(a , b){
+        var c = a+b;
+        return (a+b);
+    }
+    console.log(Add(3 , 4)); 
+    //mul fxn
+    function Multi(a , b){
+        var c = a*b;
+        return (a*b);
+    }
+    console.log(Multi(3 , 4)); 
+    //sub fxn
+    function sub(a , b){
+        var c = a-b;
+        return (a-b);
+    }
+    console.log(Sub(3 , 4)); 
+    //div fxn
+    function Div(a , b){
+        var c = a/b;
+        return (a/b);
+    }
+    console.log(Div(3 , 4)); 
+     //objescts in js
+     var students = {
+        name:"ravi",
+        rollno:59,
+        age:18,
+        id:12410126,
+        marks:90,
+        Intro: function(){
+            console.log("Hi iam a new student");
+        }
+     }
+     console.log(student.id, student.age, student.markss);
+     student.intro();
+     //  console.log(student.age);
+     
+     //constructor fxn
+     function Student(name, rollno, marks, id){
+        this.name = name;
+        this.rollno = rollno;
+        this.marks = marks;
+        this.id = id;
+     }     
+     let student1 = new student("ravi",59,100,12410126);
+     let student2 = new student("siva",61,90,12412058);
+//pop up commands
+var n1 = prompt("Enter the first number ");
+var n2 = promp("Enter the second number");
+function Multi(){
+    return n1*n2;
+    
+}
+alert(Multi(n1,n2));
+   </script>
+   <button id="demo1" onclick="alert(ADD())">ADD</button>
+   <button id="demo2" onclick="alert(SUB())">SUB</button>
+   <button id="demo3" onclick="alert(MUL())">MUL</button>
+   <button id="demo4" onclicl="alert(DIV())">DIV</button>
+<script> 
+
+    function mouse1(element){
+        document.getElementById("demo3").innerHTML=element;
+    
+    }
+    functon mouse2(element){
+        document.getElementById("demo4").style.backgroundColor=element;
+    }
+</script>
+<p id="demo4" onmouseover="mouse1('hello')" onmouseleave="mouse1('bye')">random text</p>
+<div id="demo4"></div>
+<div id="demo5"></div>
+<form >
+<input type="text">
+<input type="reset">
+<input type="submit">
+
+</form>
+
+
+   
+        
+
+
+    
+    
+</body>
+</html>
